@@ -1,0 +1,46 @@
+<Scene>
+    <!-- Camera settings -->
+    <Camera>
+        <AspectRatio>1.777</AspectRatio>
+    </Camera>
+
+    <!-- Light settings -->
+    <Light>
+        <position x="10.0" y="15.0" z="20.0" />
+        <color r="1.0" g="1.0" b="1.0" />
+        <shininess>32.0</shininess>
+    </Light>
+
+    <!-- Object definitions -->
+    <Shapes>
+        <!-- A Sphere with position (1.0, 2.0, 3.0), radius 5.0, and orange color -->
+        <Sphere>
+            <position x="1.0" y="2.0" z="3.0" />
+            <radius>5.0</radius>
+            <color r="1.0" g="0.5" b="0.0" />
+        </Sphere>
+
+        <!-- Another Sphere with position (-4.0, 0.5, 2.0), radius 2.5, and blue color -->
+        <Sphere>
+            <position x="-4.0" y="0.5" z="2.0" />
+            <radius>2.5</radius>
+            <color r="0.0" g="0.0" b="1.0" />
+        </Sphere>
+
+        <!-- A Triangle with vertices and green color -->
+        <Triangle>
+            <vertex0 x="0.0" y="0.0" z="0.0" />
+            <vertex1 x="1.0" y="0.0" z="0.0" />
+            <vertex2 x="0.0" y="1.0" z="0.0" />
+            <color r="0.0" g="1.0" b="0.0" />
+        </Triangle>
+
+        <!-- Another Triangle with vertices and red color -->
+        <Triangle>
+            <vertex0 x="-1.0" y="-1.0" z="0.0" />
+            <vertex1 x="1.0" y="-1.0" z="0.0" />
+            <vertex2 x="0.0" y="1.0" z="1.0" />
+            <color r="1.0" g="0.0" b="0.0" />
+        </Triangle>
+    </Shapes>
+</Scene>
