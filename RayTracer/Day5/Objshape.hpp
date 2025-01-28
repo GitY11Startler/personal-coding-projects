@@ -22,6 +22,9 @@ class Shape{
     public: //fonctions membres
     Vector3 getNormal(const Vector3& point) const {return (point - m_position).normalize();}
     virtual bool intersect(Ray& ray, float& t);
+
+    // destructeur par defaut
+    virtual ~Shape();
 };
 
 #endif
