@@ -126,6 +126,9 @@ int main(){
     return 0;
 
     // destroy objects
-    triangles.clear()
-    spheres.clear()
+    for(auto sphere: spheres) {sphere.~Sphere();}
+    for(auto triangle: triangles) {triangle.~Triangle();}
+
+    triangles.clear();
+    spheres.clear();
 }
