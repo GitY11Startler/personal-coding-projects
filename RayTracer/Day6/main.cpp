@@ -90,6 +90,7 @@ int main() {
     stbi_write_png("rayTracer.png", imageWidth, imageHeight, 3, image.data(), imageWidth * 3);
 
     // No need to manually delete objects as they are managed by unique_ptr
-
+    triangles.clear()
+    spheres.clear()
     return 0;
 }
