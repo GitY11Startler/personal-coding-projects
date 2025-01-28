@@ -124,4 +124,8 @@ int main(){
 
     stbi_write_png("rayTracer1.png", imageWidth, imageHeight, 3, image.data(), imageWidth*3);
     return 0;
+
+    // destroy objects
+    triangles.clear()
+    spheres.clear()
 }
