@@ -16,6 +16,8 @@ class Sphere: public Shape{
 
     Vector3 getNormal(const Vector3& point) const {return (point - getPosition()).normalize();}
 
+    ~Sphere();
+
 };
 
 #endif
