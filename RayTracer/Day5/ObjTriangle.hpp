@@ -27,5 +27,7 @@ class Triangle : public Shape {
 
     bool contains(const Vector3&) const;
 
+    ~Triangle();
+
 };
 #endif
